@@ -1,0 +1,50 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {english}{}
+\thispagestyle {empty}
+\contentsline {section}{\numberline {1}Introduction}{1}% 
+\contentsline {subsection}{\numberline {1.1}Overview of the dissertation}{1}% 
+\contentsline {subsection}{\numberline {1.2}Definition of sex}{1}% 
+\contentsline {subsection}{\numberline {1.3}Why study sex differences?}{2}% 
+\contentsline {subsection}{\numberline {1.4}Memory and episodic memory}{7}% 
+\contentsline {subsection}{\numberline {1.5}Mean vs. variance sex differences}{9}% 
+\contentsline {subsection}{\numberline {1.6}Mean sex differences}{10}% 
+\contentsline {subsubsection}{\numberline {1.6.1}General}{10}% 
+\contentsline {subsubsection}{\numberline {1.6.2}Cognition}{11}% 
+\contentsline {subsubsection}{\numberline {1.6.3}Episodic memory}{12}% 
+\contentsline {subsection}{\numberline {1.7}Variance sex differences}{13}% 
+\contentsline {subsubsection}{\numberline {1.7.1}General}{13}% 
+\contentsline {subsubsection}{\numberline {1.7.2}Cognition}{13}% 
+\contentsline {subsubsection}{\numberline {1.7.3}Episodic memory}{14}% 
+\contentsline {subsection}{\numberline {1.8}Explanations of sex differences}{16}% 
+\contentsline {subsubsection}{\numberline {1.8.1}Evolutionary explanations}{16}% 
+\contentsline {subsubsection}{\numberline {1.8.2}Biological explanations}{20}% 
+\contentsline {subsubsection}{\numberline {1.8.3}Social explanations}{22}% 
+\contentsline {subsection}{\numberline {1.9}Overarching research questions}{24}% 
+\contentsline {section}{\numberline {2}Method}{26}% 
+\contentsline {subsection}{\numberline {2.1}Dataset}{26}% 
+\contentsline {subsubsection}{\numberline {2.1.1}Data collection}{26}% 
+\contentsline {subsubsection}{\numberline {2.1.2}Hierarchical structure of the data}{29}% 
+\contentsline {subsubsection}{\numberline {2.1.3}Moderators}{30}% 
+\contentsline {subsection}{\numberline {2.2}Statistics}{33}% 
+\contentsline {subsubsection}{\numberline {2.2.1}Basics of meta-analyses}{33}% 
+\contentsline {subsubsection}{\numberline {2.2.2}Effect sizes}{34}% 
+\contentsline {subsubsection}{\numberline {2.2.3}Specific meta-analyses used}{36}% 
+\contentsline {section}{\numberline {3}Results}{38}% 
+\contentsline {subsection}{\numberline {3.1}Study \Romannum {1}}{38}% 
+\contentsline {subsubsection}{\numberline {3.1.1}Introduction}{38}% 
+\contentsline {subsubsection}{\numberline {3.1.2}Method}{39}% 
+\contentsline {subsubsection}{\numberline {3.1.3}Results and discussion}{39}% 
+\contentsline {subsection}{\numberline {3.2}Study \Romannum {2}}{43}% 
+\contentsline {subsubsection}{\numberline {3.2.1}Introduction}{43}% 
+\contentsline {subsubsection}{\numberline {3.2.2}Method}{43}% 
+\contentsline {subsubsection}{\numberline {3.2.3}Results and discussion}{43}% 
+\contentsline {subsection}{\numberline {3.3}Study \Romannum {3}}{49}% 
+\contentsline {subsubsection}{\numberline {3.3.1}Introduction}{49}% 
+\contentsline {subsubsection}{\numberline {3.3.2}Method}{49}% 
+\contentsline {subsubsection}{\numberline {3.3.3}Results and discussion}{51}% 
+\contentsline {section}{\numberline {4}Discussion}{56}% 
+\contentsline {subsection}{\numberline {4.1}Quality vs. quantity}{58}% 
+\contentsline {subsection}{\numberline {4.2}Bias and questionable research practices}{60}% 
+\contentsline {subsection}{\numberline {4.3}Dependent data problem}{63}% 
+\contentsline {subsection}{\numberline {4.4}Ethical considerations}{67}% 
+\contentsline {subsection}{\numberline {4.5}Concluding thoughts}{68}% 

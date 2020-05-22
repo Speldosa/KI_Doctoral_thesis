@@ -1,0 +1,45 @@
+[0] Config.pm:304> INFO - This is Biber 2.12
+[1] Config.pm:307> INFO - Logfile is 'Master.blg'
+[59] biber-darwin:315> INFO - === Fri May 22, 2020, 16:38:03
+[96] Biber.pm:371> INFO - Reading 'Master.bcf'
+[294] Biber.pm:889> INFO - Found 131 citekeys in bib section 0
+[322] Biber.pm:4093> INFO - Processing section 0
+[345] Biber.pm:4254> INFO - Looking for bibtex format file 'References.bib' for section 0
+[446] bibtex.pm:1523> INFO - LaTeX decoding ...
+[2669] bibtex.pm:1340> INFO - Found BibTeX data source 'References.bib'
+[2829] Utils.pm:193> WARN - month field 'Mar' in entry 'Stoet2013' is not an integer - this will probably not sort properly.
+[2990] Utils.pm:193> WARN - month field 'April' in entry 'Harris2017' is not an integer - this will probably not sort properly.
+[3083] Utils.pm:193> WARN - ISBN '1420-9101; 1010-061X' in entry 'Frank2009' is invalid - run biber with '--validate_datamodel' for details.
+[3130] Utils.pm:193> WARN - Entry 'Bettencourt1996' (References.bib): Invalid format '1996 May' of date field 'date' - ignoring
+[3131] Utils.pm:193> WARN - month field 'May' in entry 'Bettencourt1996' is not an integer - this will probably not sort properly.
+[3147] Utils.pm:193> WARN - Entry 'Grijalva2015' (References.bib): Invalid format '2015 Mar' of date field 'date' - ignoring
+[3148] Utils.pm:193> WARN - month field 'Mar' in entry 'Grijalva2015' is not an integer - this will probably not sort properly.
+[3173] Utils.pm:193> WARN - month field 'May' in entry 'Fillingim2009' is not an integer - this will probably not sort properly.
+[3567] Utils.pm:193> WARN - month field 'Dec' in entry 'Deary2003' is not an integer - this will probably not sort properly.
+[3683] Utils.pm:193> WARN - ISBN '0002-9297; 1537-6605' in entry 'Zerjal2003' is invalid - run biber with '--validate_datamodel' for details.
+[3701] Utils.pm:193> WARN - ISBN '2045-2322' in entry 'Schacht2016' is invalid - run biber with '--validate_datamodel' for details.
+[3739] Utils.pm:193> WARN - ISBN '1572-8641' in entry 'Holcomb1996' is invalid - run biber with '--validate_datamodel' for details.
+[3764] Utils.pm:193> WARN - month field 'Nov' in entry 'Grabowska2016' is not an integer - this will probably not sort properly.
+[3781] Utils.pm:193> WARN - month field 'Jan' in entry 'Tian2011' is not an integer - this will probably not sort properly.
+[3800] Utils.pm:193> WARN - month field '{JAN 14}' in entry 'Ingalhalikar2014' is not an integer - this will probably not sort properly.
+[3801] Utils.pm:193> WARN - year field '{2014}' in entry 'Ingalhalikar2014' is not an integer - this will probably not sort properly.
+[3806] Utils.pm:193> WARN - month field '{JAN-FEB}' in entry 'Proverbio2017' is not an integer - this will probably not sort properly.
+[3806] Utils.pm:193> WARN - year field '{2017}' in entry 'Proverbio2017' is not an integer - this will probably not sort properly.
+[3813] Utils.pm:193> WARN - month field 'Jun' in entry 'Kret2012' is not an integer - this will probably not sort properly.
+[3828] Utils.pm:193> WARN - month field 'Mar' in entry 'Haier2005' is not an integer - this will probably not sort properly.
+[3857] Utils.pm:193> WARN - month field 'Jul' in entry 'Young2013' is not an integer - this will probably not sort properly.
+[3869] Utils.pm:193> WARN - year field '{2000}' in entry 'Ragland2000' is not an integer - this will probably not sort properly.
+[3919] Utils.pm:193> WARN - month field 'Jul' in entry 'Weber2014' is not an integer - this will probably not sort properly.
+[3926] Utils.pm:193> WARN - month field 'Jan' in entry 'Lippa2010c' is not an integer - this will probably not sort properly.
+[4059] Utils.pm:193> WARN - month field 'Jul' in entry 'Nowell1998' is not an integer - this will probably not sort properly.
+[4095] Utils.pm:193> WARN - ISBN '1476-4687' in entry 'Begley2012' is invalid - run biber with '--validate_datamodel' for details.
+[4134] Utils.pm:193> WARN - ISBN '1531-5320' in entry 'Francis2012' is invalid - run biber with '--validate_datamodel' for details.
+[4165] Utils.pm:193> WARN - Entry 'Hedges2010' (References.bib): Invalid format '2010 Jan' of date field 'date' - ignoring
+[4166] Utils.pm:193> WARN - month field 'Jan' in entry 'Hedges2010' is not an integer - this will probably not sort properly.
+[4516] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[4516] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[4516] Biber.pm:3921> INFO - Sorting list 'apa/global//global/global' of type 'entry' with template 'apa' and locale 'en-US'
+[4516] Biber.pm:3927> INFO - No sort tailoring available for locale 'en-US'
+[4720] bbl.pm:636> INFO - Writing 'Master.bbl' with encoding 'UTF-8'
+[5147] bbl.pm:739> INFO - Output to Master.bbl
+[5148] Biber.pm:110> INFO - WARNINGS: 29

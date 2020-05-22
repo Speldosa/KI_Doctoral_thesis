@@ -1,0 +1,255 @@
+﻿\documentclass[12pt,twoside,]{article}
+
+% Page numbering to the left and to the right. Code snippet taken from: https://tex.stackexchange.com/a/443349
+	\usepackage{scrlayer-scrpage}
+	\setkomafont{pageheadfoot}{} % Define font style for page head foot.
+	\clearpairofpagestyles % Remove the defaults.
+	\ofoot{\pagemark} % Put the page number in the outer footer.
+
+% General stuff.
+	\usepackage[paperwidth=169mm,paperheight=239mm, left=25mm, right=15mm, top=14mm, bottom=22mm]{geometry}
+
+	\usepackage{parskip}
+
+	\usepackage{pdfpages}
+
+	\usepackage{graphicx}
+
+	\usepackage{amssymb}
+
+	\usepackage{csquotes}
+
+	\usepackage[english]{babel}
+
+	\usepackage[style=apa,backend=biber,eprint=false]{biblatex}
+
+	\addbibresource{References.bib}
+
+	\usepackage{lipsum}
+
+	\usepackage{romannum}
+
+	\usepackage{siunitx}
+	\sisetup{
+		round-mode = places, % Rounds numbers...
+		round-precision = 1, % ...to 2 places.
+	}
+
+	\usepackage{numprint}
+
+	\usepackage{placeins}
+
+	\usepackage{color}
+
+	\usepackage{enumerate}
+
+% Fonts 'n stuff
+	\usepackage{fontspec,xltxtra,xunicode}
+	\defaultfontfeatures{Mapping=tex-text}
+
+	\setromanfont{Charter}
+	\setsansfont{Lato}
+
+	\usepackage{sectsty}
+	\sectionfont{\MakeUppercase}
+	\subsectionfont{\MakeUppercase}
+	\subsubsectionfont{\MakeUppercase}
+
+	\usepackage[margin=5mm,font={sf}]{caption}
+	\captionsetup{font={sf,small}}
+
+% Change table of contents heading. Taken from: https://tex.stackexchange.com/a/28518/3555
+	\addto\captionsenglish{ % Replace "english" with the language you use.
+  	\renewcommand{\contentsname}
+    	{CONTENTS}
+			}
+
+% Typesets the table of contents only in capital letters. Taken from: https://tex.stackexchange.com/a/531119/3555
+	\usepackage{tocloft}
+	\usepackage{etoolbox}
+
+	\makeatletter
+	\patchcmd{\l@section}
+	    {\cftsecfont #1}
+	    {\cftsecfont {#1}}
+	    {}
+	    {}
+	\makeatother
+	\renewcommand\cftsecfont{\normalsize\bf\MakeUppercase}
+
+	\makeatletter
+	\patchcmd{\l@subsection}
+	    {\cftsubsecfont #1}
+	    {\cftsubsecfont {#1}}
+	    {}
+	    {}
+	\makeatother
+	\renewcommand\cftsubsecfont{\small\MakeUppercase}
+
+	\makeatletter
+	\patchcmd{\l@subsubsection}
+	    {\cftsubsubsecfont #1}
+	    {\cftsubsubsecfont {#1}}
+	    {}
+	    {}
+	\makeatother
+	\renewcommand\cftsubsubsecfont{\small\MakeUppercase}
+
+% Package needed in order to be able to typeset two columns for the spikblad.
+	\usepackage{paracol}
+
+% Code needed in order to put the table of contents further up on the page. Taken from: https://tex.stackexchange.com/a/47052/3555
+	\usepackage{tocloft}
+	\renewcommand\cftbeforetoctitleskip{-5mm}
+
+% Tables
+	\usepackage{booktabs} % Getting commands like \toprule in the tabular enviroment.
+	\usepackage[font=sf]{floatrow} % Getting SF font in the tabular enviroment.
+
+	% Only use the math font of mathpazo. This one is better than the default.
+	\let\temp\rmdefault
+	\usepackage{mathpazo}
+	\let\rmdefault\temp
+
+% Code used to get unindented item listings in description.
+	\usepackage{enumitem}
+	\setlist[description]{leftmargin=1cm, itemindent=0.12cm, labelsep=0.12cm}
+
+\begin{document}
+\sloppy % Trying to deal with overflow of margins. Taken from https://stackoverflow.com/a/4146725
+\pagenumbering{gobble}
+
+% Title page.
+\newpage
+\thispagestyle{empty}
+\begin{center}
+\vspace*{25mm}
+From The Department of Clinical Neuroscience \\
+Karolinska Institutet, Stockholm, Sweden \\
+\vspace{30mm}
+{\Large INVESTIGATING AND EXPLAINING} \\
+\vspace{2mm}
+{\Large SEX DIFFERENCES IN EPISODIC MEMORY} \\
+\vspace{5mm}
+Martin Asperholm \\
+\vspace{40mm}
+\includegraphics[width=8cm]{Logo/KI-Logo_pos.eps} \\
+Stockholm 2020
+\end{center}
+
+% Disclaimer page.
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\vfill
+\begin{flushleft}
+	\noindent All previously published papers and figures were reproduced under open licenses or with permissions from the respective publishers. \\
+	\vspace{2mm}
+	\noindent Published by Karolinska Institutet. \\
+	\vspace{2mm}
+	\noindent Printed by Universitetsservice US-AB \\
+	\vspace{2mm}
+	\noindent © Martin Asperholm, 2020 \\
+	\vspace{2mm}
+	\noindent ISBN 978-91-7831-771-4
+\end{flushleft}
+
+% Spikblad.
+\newpage
+\thispagestyle{empty}
+\vspace*{0mm}
+
+\begin{flushleft}
+	{\Large INVESTIGATING AND EXPLAINING \\ SEX DIFFERENCES IN EPISODIC MEMORY} \\
+	\vspace{\baselineskip}
+	{\Large THESIS FOR DOCTORAL DEGREE (Ph.D.)} \\
+	\vspace{\baselineskip}
+	By \\
+	\vspace{\baselineskip}
+	{\Large \bf{Martin Asperholm}}
+\end{flushleft}
+\vspace{\baselineskip}
+
+\begin{paracol}{2}
+
+\begin{flushleft}
+	\emph{Principal Supervisor}:\\
+	Professor Agneta Herlitz \\
+	Karolinska Institutet \\
+	Department of Clinical Neuroscience \\
+	Division of Psychology \\
+	\vspace{\baselineskip}
+	\emph{Co-supervisors}:\\
+	Professor Håkan Fischer \\
+	Stockholm University \\
+	Department of Psychology \\
+	\vspace{\baselineskip}
+	Professor Gustav Gredebäck \\
+	Uppsala University \\
+	Department of Psychology
+\end{flushleft}
+
+\switchcolumn
+
+\begin{flushleft}
+	\emph{Opponent}: \\
+	Professor Gijsbert Stoet \\
+	University of Essex \\
+	Department of Psychology \\
+	\vspace{\baselineskip}
+	\emph{Examination Board}: \\
+	Dr. Rickard Carlsson \\
+	Linnæus University \\
+	Department of Psychology \\
+	\vspace{\baselineskip}
+	Professor Timo Mäntylä \\
+	Stockholm University \\
+	Department of Psychology \\
+	\vspace{\baselineskip}
+	Professor Guy Madison \\
+	Umeå University \\
+	Department of Psychology
+\end{flushleft}
+
+\end{paracol}
+
+% Abstract
+\newpage
+\thispagestyle{empty}
+\section*{Abstract}
+
+Sex differences can be seen in a lot of different areas, one of them being cognition where, among other things, men tend to perform better at more spatial tasks and women at more verbal. When it comes to episodic memory --- the memory for past events in terms of the what, where, and when --- there has been some circumstantial evidence of sex differences. In Study \Romannum{1} of this thesis, we performed a meta-analysis on mean sex differences in episodic memory, using a dataset of 617 studies, totaling over one million subjects. This dataset consisted both of published and unpublished data, as well as several open databases. Here, the main finding was that, just like with other cognitive tasks, males tend to perform better on more spatial tasks while females tend to perform better on more verbal tasks. It could also be shown that females performed better when remembering faces, as well as tasks having to do with smell, touch, and different shades of colors.
+
+Further, it has been shown that males tend to be more variable than females for a lot of different traits, both biological and psychological. Even if men, on a group level, usually have larger variance when it comes to cognition in general, there is less support for saying anything about episodic memory. In Study \Romannum{2} of this thesis, we performed a number of analyses on a somewhat reduced version of the dataset gathered in Study \Romannum{1}, searching for variance differences between males and females. Here, there were some evidence showing that males were slightly more variable than females. However, through exploratory investigations we also found results suggesting that this pattern potentially could come about because of underlying methodological problems in the original research.
+
+Finally, there have been some large-scale studies suggesting that when it comes to improvements in cognition, women tend to benefit more than men from social progress and increased living conditions in a society. There has also been some evidence for this relationship when it comes to episodic memory. In Study \Romannum{3}, we expanded upon these findings by examining the dataset gathered in Study \Romannum{1}, which comprises more countries and a larger timeframe than any other investigation on this topic. Here, we could show that for verbal episodic memory, sex differences were related to several different indicators of living conditions tied to the year and country of each study. However, when pitted against each other, it was only the overall education and employment level that could be shown to be related to the outcome and not gender equality, which we expected would be the most important indicator.
+
+In this thesis, I first present a comprehensive background on the topics presented above, including some in-depth, possible explanations for why things are the way they are from evolutionary, biological, and social perspectives. I then go through the dataset that all three studies are based on, as well as present the result from them, including some of my own interpretations. Finally, I discuss some general themes that relate to the studies performed, including necessary choices when collecting data for meta-analyses, possible bias in the dataset, and statistical considerations when dealing with dependent data.
+
+% List of scientific papers
+\newpage
+\thispagestyle{empty}
+\section*{List of scientific papers}
+\begin{enumerate}[label=\Roman*.]
+	\item \fullcite{Asperholm2019}
+  \item \fullcite{Asperholm2020}
+  \item \fullcite{Asperholm2019b}
+\end{enumerate}
+
+% Table of contents.
+\newpage
+{\textsc{\tableofcontents}}
+\thispagestyle{empty} % Needed in order to not get page numbering.
+\addtocontents{toc}{\protect\thispagestyle{empty}} % Needed in order to not get page numbering.
+
+% Start of actual text.
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\input{Text.tex}
+
+\FloatBarrier
+\printbibliography
+
+\end{document}
